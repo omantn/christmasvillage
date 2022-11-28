@@ -1,0 +1,61 @@
+{% extends "christmas_base.html" %}
+{% block title %}Lights Page{% endblock %}
+{% block content %}
+{% if data["houses"] %}
+    <table align="center">
+    {% for x in data["houses"] %}
+        <tr>
+            <form action="/setlight" method="post">
+
+            <td><input name="neopixelid" type="hidden" value="{{x['neopixelid'] }}"/></td>
+            <td>
+                <select name="lightcolor" id="color{{x['neopixelid']}}">
+                    {% if x['lightcolor']=='white'%}
+                        <option value="white" selected>white</option>
+                    {% else %}
+                        <option value="white" >white</option>
+                    {% endif %}
+                    {% if x['lightcolor']=='green'%}
+                        <option value="green" selected>green</option>
+                    {% else %}
+                        <option value="green" >green</option>
+                    {% endif %}
+                    {% if x['lightcolor']=='red'%}
+                        <option value="red" selected>red</option>
+                    {% else %}
+                        <option value="red" >red</option>
+                    {% endif %}
+                    {% if x['lightcolor']=='blue'%}
+                        <option value="blue" selected>blue</option>
+                    {% else %}
+                        <option value="blue" >blue</option>
+                    {% endif %}
+                    {% if x['lightcolor']=='yellow'%}
+                        <option value="yellow" selected>yellow</option>
+                    {% else %}
+                        <option value="yellow" >yellow</option>
+                    {% endif %}
+                    {% if x['lightcolor']=='aqua'%}
+                        <option value="aqua" selected>aqua</option>
+                    {% else %}
+                        <option value="aqua" >aqua</option>
+                    {% endif %}
+                    {% if x['lightcolor']=='fire'%}
+                        <option value="fire" selected>fire</option>
+                    {% else %}
+                        <option value="fire" >fire</option>
+                    {% endif %}
+                  </select>                
+            </td>
+            <td>{{ x['name'] }}</td>
+            <td>
+                    <input type="submit" class="submit-button" value="Set Color" />
+            </td>
+            </form>                
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    None <br>
+{% endif %}
+{% endblock %}

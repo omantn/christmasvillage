@@ -1,0 +1,66 @@
+{
+    "brightness": 0.4,
+    "neopixelpin": 18,
+    "power": 24,
+    "trainoutpin": 12,
+    "trainapin": 27,
+    "trainbpin": 22,
+    "trainhalfspeed": 40000,
+    "trainfullspeed": 65535,
+    "prox1": 5,
+    "prox2": 6,
+    "prox3": 13,
+    "prox4": 26,
+    "houses": [
+        {
+            "name": "Wrenbury Baker",
+            "lightcolor": "green",
+            "neopixelid": 0
+        },
+        {
+            "name": "The Abbey",
+            "lightcolor": "white",
+            "neopixelid": 1
+        },
+        {
+            "name": "Jack",
+            "lightcolor": "white",
+            "neopixelid": 2
+        },
+        {
+            "name": "Pizza",
+            "lightcolor": "white",
+            "neopixelid": 3
+        },
+        {
+            "name": "Church",
+            "lightcolor": "white",
+            "neopixelid": 4
+        },
+        {
+            "name": "Egg",
+            "lightcolor": "white",
+            "neopixelid": 5
+        },
+        {
+            "name": "Giggles",
+            "lightcolor": "white",
+            "neopixelid": 6
+        },
+        {
+            "name": "Puddlewick",
+            "lightcolor": "white",
+            "neopixelid": 7
+        },
+        {
+            "name": "East India",
+            "lightcolor": "white",
+            "neopixelid": 8
+        },
+        {
+            "name": "Victoria Station",
+            "lightcolor": "white",
+            "neopixelid": 9
+        }
+    ]
+}
